@@ -1,0 +1,221 @@
+:root {
+  --rojo:#DC3131;
+  --verde_1:#13AB46;
+  --verde_2:#85F28C;
+  --azul_1:#1E4DE8;
+  --azul_2:#949FFF;
+  --gris_oscuro:#434343;
+  --gris_claro:#EFEFEF;
+}
+
+body{
+  margin:0;
+  height:0;
+  overflow-x:hidden;
+  font-family: 'Roboto', sans-serif!important;
+  user-select: none;
+  color:var(--gris_oscuro);
+}
+
+h1{
+  font-family: 'Roboto Slab', serif;  
+  color:var(--gris_oscuro);
+}
+
+.coolback{ 
+  width:100vw;
+  min-height:100vh;
+  padding-bottom:100px;
+  padding-top:140px;
+}
+
+.paciente{  
+  background:url("assets/manitas.png");
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+.experto{
+  background:url("assets/medico.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.fullpage {
+  width:100vw;
+  height:100vh;
+  padding-top:40px;
+  overflow: hidden;
+}
+
+.fullpages {
+  width:100vw;
+  min-height:100vh;
+  padding:40px;
+  padding-top:140px;
+}
+
+
+.jumbotron{
+  background:var(--gris_claro)!important;
+}
+
+.navbar {
+  background:transparent;
+  padding:20px!important;  
+  z-index:9999;
+}
+
+.blury{
+  top:0px;
+  width:100vw;
+  height:150px;
+  backdrop-filter: blur(4px);
+  position: fixed;
+  z-index:999;
+ -webkit-mask-image: linear-gradient(to top, transparent 35%, black 65%);
+  mask-image: linear-gradient(to top, transparent 35%, black 65%);
+}
+
+.shadowy{
+  top:0px;
+  width:100vw;
+  height:100px;
+  position: fixed;
+  z-index:99;
+  background: linear-gradient(to top, transparent 10%, rgba(0, 3, 31, 0.712) 100%);
+}
+
+.nav-item{
+  padding:20px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:12px;
+  font-weight: bold;
+}
+
+.nav-link:hover, .nav-link.active{
+  font-weight: bold;
+}
+
+
+.navbar-brand {
+  font-family: 'Roboto Slab', serif;
+  z-index:999999;
+}
+
+.melanomia{
+  margin-top:-50px;
+  margin-left:60px;
+}
+
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #e1e1e1;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.btn{
+  background:var(--azul_1)!important;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:12px!important;
+  text-align: center;
+  min-width:250px;
+  font-weight: bold;
+  padding:20px!important;
+  padding-left:40px!important;
+  padding-right:40px!important;
+}
+
+.verdito{
+  background:var(--verde_1)!important;
+  border-color:var(--verde_1)!important;
+}
+
+.imagen img{
+  width:100vh;
+}
+
+.card {
+  margin:10px!important;
+  text-align: center;
+}
+
+.card-title {
+  letter-spacing:2px;
+  text-transform:uppercase;
+  font-size:12px!important;
+  font-weight: bold;
+}
+
+.pacienteico{
+  background:url("assets/paciente.png") no-repeat!important;  
+  background-position-x: right!important;
+  background-size:contain!important;
+}
+
+.expertoico{
+  background:url("assets/experto.png") no-repeat!important;  
+  background-position-x: left!important;
+  background-size:contain!important;
+}
+
+.infopaciente{
+  width:200px;
+  height:200px;
+  background:url("assets/paciente.png") no-repeat!important;  
+  background-position-x: right;
+  background-size:contain!important;
+}
+
+
+.card-img-bottom{
+  border-radius:4px;
+  border:1px solid #fff;
+}
+
+.cardback{
+  padding:50px; 
+  background: var(--gris_claro);
+  /*box-shadow: inset 0 15px 20px -15px rgba(0,0,0,0.2);*/
+}
+
+
+.card-deck .card-title{
+  letter-spacing:0px!important;
+  text-transform:initial!important;
+  font-size:16px!important;
+  color:var(--azul_1);
+  font-weight: bold;
+}
+
+.textoverde{
+  color:var(--verde_1)!important;
+}
+
+.textotitulo{
+  color:white!important;
+}
+
+.card-deck .card .card-text {
+  font-size:15px;
+}
